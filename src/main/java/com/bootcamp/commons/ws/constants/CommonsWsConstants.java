@@ -6,4 +6,5 @@ package com.bootcamp.commons.ws.constants;
 public interface CommonsWsConstants {
     public static String  CRITERIA_FIELDS = "query";
     public static String  SELECT_FIELDS = "fields";
+    public static String MAP_COUNT_KEY="count";
 }
