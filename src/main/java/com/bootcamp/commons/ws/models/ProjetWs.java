@@ -1,20 +1,20 @@
 package com.bootcamp.commons.ws.models;
 
-import com.bootcamp.entities.Axe;
+import com.bootcamp.entities.Projet;
 
 /**
  * Created by darextossa on 11/27/17.
  */
 public class ProjetWs {
 
-    private Axe data;
+    private Projet data;
     private Error error;
 
-    public Axe getData() {
+    public Projet getData() {
         return data;
     }
 
-    public void setData(Axe data) {
+    public void setData(Projet data) {
         this.data = data;
     }
 
