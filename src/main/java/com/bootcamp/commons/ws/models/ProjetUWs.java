@@ -1,5 +1,7 @@
 package com.bootcamp.commons.ws.models;
 
+import java.util.List;
+
 public class ProjetUWs {
     private int id;
     private String nom;
@@ -13,6 +15,15 @@ public class ProjetUWs {
     private double budgetPrevisionnel;
     private double budgetReel;
     private double coutReel;
+    private List<Integer> idSecteurs;
+
+    public List<Integer> getIdSecteurs() {
+        return idSecteurs;
+    }
+
+    public void setIdSecteurs(List<Integer> idSecteurs) {
+        this.idSecteurs = idSecteurs;
+    }
 
     public int getId() {
         return id;
