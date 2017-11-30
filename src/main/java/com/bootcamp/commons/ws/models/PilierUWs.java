@@ -1,11 +1,22 @@
 package com.bootcamp.commons.ws.models;
 
+import java.util.List;
+
 public class PilierUWs {
     private int id;
     private String nom;
     private String description;
     private Long dateCreation;
     private Long dateMiseAJour;
+    private List<ProjetUWs> projets;
+
+    public List<ProjetUWs> getProjets() {
+        return projets;
+    }
+
+    public void setProjets(List<ProjetUWs> projets) {
+        this.projets = projets;
+    }
 
     public int getId() {
         return id;
