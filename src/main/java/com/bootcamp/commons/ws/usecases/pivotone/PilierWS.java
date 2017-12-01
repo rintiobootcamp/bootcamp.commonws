@@ -18,4 +18,52 @@ public class PilierWS {
     private long dateCreation;
     private long dateMiseAJour;
     private List<AxeWS> axes;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public long getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(long dateCreation) {
+        this.dateCreation = dateCreation;
+    }
+
+    public long getDateMiseAJour() {
+        return dateMiseAJour;
+    }
+
+    public void setDateMiseAJour(long dateMiseAJour) {
+        this.dateMiseAJour = dateMiseAJour;
+    }
+
+    public List<AxeWS> getAxes() {
+        return axes;
+    }
+
+    public void setAxes(List<AxeWS> axes) {
+        this.axes = axes;
+    }
 }

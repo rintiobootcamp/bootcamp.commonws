@@ -17,4 +17,44 @@ public class RegionWS {
     private RegionType type;
     private long longitude;
     private long latitude;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public RegionType getType() {
+        return type;
+    }
+
+    public void setType(RegionType type) {
+        this.type = type;
+    }
+
+    public long getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(long longitude) {
+        this.longitude = longitude;
+    }
+
+    public long getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(long latitude) {
+        this.latitude = latitude;
+    }
 }
