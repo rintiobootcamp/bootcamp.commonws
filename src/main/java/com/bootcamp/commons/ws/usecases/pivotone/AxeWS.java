@@ -5,6 +5,9 @@
  */
 package com.bootcamp.commons.ws.usecases.pivotone;
 
+import com.bootcamp.entities.Pilier;
+
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -21,7 +24,8 @@ public class AxeWS {
     private long dateCreation;
     private long dateMiseAJour;
     private List<SecteurWS> secteurs;
-    private int pilierId;
+    private HashMap<String, Object> pilier;
+    private List<MediaWs> mediaWss;
 
     public int getId() {
         return id;
@@ -95,11 +99,19 @@ public class AxeWS {
         this.secteurs = secteurs;
     }
 
-    public int getPilierId() {
-        return pilierId;
+    public HashMap<String, Object> getPilier() {
+        return pilier;
     }
 
-    public void setPilierId(int pilierId) {
-        this.pilierId = pilierId;
+    public void setPilier(HashMap<String, Object> pilier) {
+        this.pilier = pilier;
+    }
+
+    public List<MediaWs> getMediaWss() {
+        return mediaWss;
+    }
+
+    public void setMediaWss(List<MediaWs> mediaWss) {
+        this.mediaWss = mediaWss;
     }
 }

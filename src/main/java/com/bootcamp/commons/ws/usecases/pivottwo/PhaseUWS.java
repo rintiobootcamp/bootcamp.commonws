@@ -17,4 +17,44 @@ public class PhaseUWS {
     private long dateDebut;
     private long dateFin;
     private boolean actif;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public long getDateDebut() {
+        return dateDebut;
+    }
+
+    public void setDateDebut(long dateDebut) {
+        this.dateDebut = dateDebut;
+    }
+
+    public long getDateFin() {
+        return dateFin;
+    }
+
+    public void setDateFin(long dateFin) {
+        this.dateFin = dateFin;
+    }
+
+    public boolean isActif() {
+        return actif;
+    }
+
+    public void setActif(boolean actif) {
+        this.actif = actif;
+    }
 }

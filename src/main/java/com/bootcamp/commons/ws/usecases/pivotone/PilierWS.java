@@ -5,6 +5,8 @@
  */
 package com.bootcamp.commons.ws.usecases.pivotone;
 
+import com.bootcamp.entities.Media;
+
 import java.util.List;
 
 /**
@@ -18,6 +20,7 @@ public class PilierWS {
     private long dateCreation;
     private long dateMiseAJour;
     private List<AxeWS> axes;
+    private List<MediaWs> mediaWss;
 
     public int getId() {
         return id;
@@ -65,5 +68,13 @@ public class PilierWS {
 
     public void setAxes(List<AxeWS> axes) {
         this.axes = axes;
+    }
+
+    public List<MediaWs> getMediaWss() {
+        return mediaWss;
+    }
+
+    public void setMediaWss(List<MediaWs> mediaWss) {
+        this.mediaWss = mediaWss;
     }
 }

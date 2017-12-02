@@ -28,6 +28,7 @@ public class ProjetWS {
     private String objectif;
     private List<PhaseWS> phases;
     private int secteurId;
+    private SecteurWS secteur;
     private double niveauFinacement;
     private List<RegionWS> regions = new ArrayList<RegionWS>();
 
@@ -157,5 +158,13 @@ public class ProjetWS {
 
     public void setRegions(List<RegionWS> regions) {
         this.regions = regions;
+    }
+
+    public SecteurWS getSecteur() {
+        return secteur;
+    }
+
+    public void setSecteur(SecteurWS secteur) {
+        this.secteur = secteur;
     }
 }

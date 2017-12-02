@@ -5,6 +5,7 @@
  */
 package com.bootcamp.commons.ws.usecases.pivotone;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -19,7 +20,8 @@ public class SecteurWS {
     private long dateCreation;
     private long dateMiseAJour;
     private List<ProjetWS> projets;
-    private int axeId;
+    private HashMap<String, Object> axe;
+    private List<MediaWs> mediaWss;
 
     public int getId() {
         return id;
@@ -77,11 +79,19 @@ public class SecteurWS {
         this.projets = projets;
     }
 
-    public int getAxeId() {
-        return axeId;
+    public HashMap<String, Object> getAxe() {
+        return axe;
     }
 
-    public void setAxeId(int axeId) {
-        this.axeId = axeId;
+    public void setAxe(HashMap<String, Object> axe) {
+        this.axe = axe;
+    }
+
+    public List<MediaWs> getMediaWss() {
+        return mediaWss;
+    }
+
+    public void setMediaWss(List<MediaWs> mediaWss) {
+        this.mediaWss = mediaWss;
     }
 }
