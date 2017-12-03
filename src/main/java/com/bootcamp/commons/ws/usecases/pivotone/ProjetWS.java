@@ -5,6 +5,8 @@
  */
 package com.bootcamp.commons.ws.usecases.pivotone;
 
+import com.bootcamp.entities.Phase;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,11 +28,13 @@ public class ProjetWS {
     private double budgetReel;
     private double coutReel;
     private String objectif;
+    private PhaseWS phaseActuelle;
     private List<PhaseWS> phases;
     private int secteurId;
     private SecteurWS secteur;
     private double niveauFinacement;
     private List<RegionWS> regions = new ArrayList<RegionWS>();
+    private List<MediaWs> medias;
 
     public int getId() {
         return id;
@@ -166,5 +170,21 @@ public class ProjetWS {
 
     public void setSecteur(SecteurWS secteur) {
         this.secteur = secteur;
+    }
+
+    public PhaseWS getPhaseActuelle() {
+        return phaseActuelle;
+    }
+
+    public void setPhaseActuelle(PhaseWS phaseActuelle) {
+        this.phaseActuelle = phaseActuelle;
+    }
+
+    public List<MediaWs> getMedias() {
+        return medias;
+    }
+
+    public void setMedias(List<MediaWs> medias) {
+        this.medias = medias;
     }
 }
