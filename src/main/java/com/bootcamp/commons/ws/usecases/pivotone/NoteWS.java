@@ -1,62 +1,135 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.bootcamp.commons.ws.usecases.pivotone;
 
+import com.bootcamp.commons.enums.EntityType;
+
+/**
+ *
+ * @author Bello
+ */
 public class NoteWS {
-    private int startNote;
-    private int star1;
-    private int start2;
-    private int start3;
-    private int start4;
-    private int start5;
+    private int entityId;
+    private EntityType entityType;
+    private double moyenne;
+    private int noteOneCounts;
+    private int noteTwoCounts;
+    private int noteThreeCounts;
+    private int noteFourCounts;
+    private int noteFiveCounts;
 
-    public int getStartNote() {
-        return startNote;
+    /**
+     * @return the entityId
+     */
+    public int getEntityId() {
+        return entityId;
     }
 
-    public void setStartNote(int startNote) {
-        this.startNote = startNote;
+    /**
+     * @param entityId the entityId to set
+     */
+    public void setEntityId(int entityId) {
+        this.entityId = entityId;
     }
 
-    public int getStar1() {
-        return star1;
+    /**
+     * @return the entityType
+     */
+    public EntityType getEntityType() {
+        return entityType;
     }
 
-    public void setStar1(int star1) {
-        this.star1 = star1;
+    /**
+     * @param entityType the entityType to set
+     */
+    public void setEntityType(EntityType entityType) {
+        this.entityType = entityType;
     }
 
-    public int getStart2() {
-        return start2;
+    /**
+     * @return the moyenne
+     */
+    public double getMoyenne() {
+        return moyenne;
     }
 
-    public void setStart2(int start2) {
-        this.start2 = start2;
+    /**
+     * @param moyenne the moyenne to set
+     */
+    public void setMoyenne(double moyenne) {
+        this.moyenne = moyenne;
     }
 
-    public int getStart3() {
-        return start3;
+    /**
+     * @return the noteOneCounts
+     */
+    public int getNoteOneCounts() {
+        return noteOneCounts;
     }
 
-    public void setStart3(int start3) {
-        this.start3 = start3;
+    /**
+     * @param noteOneCounts the noteOneCounts to set
+     */
+    public void setNoteOneCounts(int noteOneCounts) {
+        this.noteOneCounts = noteOneCounts;
     }
 
-    public int getStart4() {
-        return start4;
+    /**
+     * @return the noteTwoCounts
+     */
+    public int getNoteTwoCounts() {
+        return noteTwoCounts;
     }
 
-    public void setStart4(int start4) {
-        this.start4 = start4;
+    /**
+     * @param noteTwoCounts the noteTwoCounts to set
+     */
+    public void setNoteTwoCounts(int noteTwoCounts) {
+        this.noteTwoCounts = noteTwoCounts;
     }
 
-    public int getStart5() {
-        return start5;
+    /**
+     * @return the noteThreeCounts
+     */
+    public int getNoteThreeCounts() {
+        return noteThreeCounts;
     }
 
-    public void setStart5(int start5) {
-        this.start5 = start5;
+    /**
+     * @param noteThreeCounts the noteThreeCounts to set
+     */
+    public void setNoteThreeCounts(int noteThreeCounts) {
+        this.noteThreeCounts = noteThreeCounts;
     }
 
-    public double calNoteAverage(){
-        return (getStar1()+getStart2()+getStart3()+getStart4()+getStart5())/5.0;
+    /**
+     * @return the noteFourCounts
+     */
+    public int getNoteFourCounts() {
+        return noteFourCounts;
+    }
+
+    /**
+     * @param noteFourCounts the noteFourCounts to set
+     */
+    public void setNoteFourCounts(int noteFourCounts) {
+        this.noteFourCounts = noteFourCounts;
+    }
+
+    /**
+     * @return the noteFiveCounts
+     */
+    public int getNoteFiveCounts() {
+        return noteFiveCounts;
+    }
+
+    /**
+     * @param noteFiveCounts the noteFiveCounts to set
+     */
+    public void setNoteFiveCounts(int noteFiveCounts) {
+        this.noteFiveCounts = noteFiveCounts;
     }
 }
