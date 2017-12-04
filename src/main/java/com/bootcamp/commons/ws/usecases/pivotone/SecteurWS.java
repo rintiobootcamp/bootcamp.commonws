@@ -5,6 +5,8 @@
  */
 package com.bootcamp.commons.ws.usecases.pivotone;
 
+import com.bootcamp.entities.Media;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -21,7 +23,25 @@ public class SecteurWS {
     private long dateMiseAJour;
     private List<ProjetWS> projets;
     private HashMap<String, Object> axe;
-    private List<MediaWs> mediaWss;
+    private List<Media> medias;
+    private LikeWS likeWS;
+    private NoteWS noteWS;
+
+    public LikeWS getLikeWS() {
+        return likeWS;
+    }
+
+    public void setLikeWS(LikeWS likeWS) {
+        this.likeWS = likeWS;
+    }
+
+    public NoteWS getNoteWS() {
+        return noteWS;
+    }
+
+    public void setNoteWS(NoteWS noteWS) {
+        this.noteWS = noteWS;
+    }
 
     public int getId() {
         return id;
@@ -87,11 +107,11 @@ public class SecteurWS {
         this.axe = axe;
     }
 
-    public List<MediaWs> getMediaWss() {
-        return mediaWss;
+    public List<Media> getMedias() {
+        return medias;
     }
 
-    public void setMediaWss(List<MediaWs> mediaWss) {
-        this.mediaWss = mediaWss;
+    public void setMedias(List<Media> medias) {
+        this.medias = medias;
     }
 }

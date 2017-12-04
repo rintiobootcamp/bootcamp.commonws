@@ -1,22 +1,22 @@
 package com.bootcamp.commons.ws.usecases.pivotone;
 
 public class LikeWS {
-    private Long like;
-    private Long unlike;
+    private int like;
+    private int unlike;
 
-    public Long getLike() {
+    public int getLike() {
         return like;
     }
 
-    public void setLike(Long like) {
+    public void setLike(int like) {
         this.like = like;
     }
 
-    public Long getUnlike() {
+    public int getUnlike() {
         return unlike;
     }
 
-    public void setUnlike(Long unlike) {
+    public void setUnlike(int unlike) {
         this.unlike = unlike;
     }
 }

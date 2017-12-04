@@ -20,7 +20,25 @@ public class PilierWS {
     private long dateCreation;
     private long dateMiseAJour;
     private List<AxeWS> axes;
-    private List<MediaWs> mediaWss;
+    private List<Media> medias;
+    private LikeWS likeWS;
+    private NoteWS noteWS;
+
+    public LikeWS getLikeWS() {
+        return likeWS;
+    }
+
+    public void setLikeWS(LikeWS likeWS) {
+        this.likeWS = likeWS;
+    }
+
+    public NoteWS getNoteWS() {
+        return noteWS;
+    }
+
+    public void setNoteWS(NoteWS noteWS) {
+        this.noteWS = noteWS;
+    }
 
     public int getId() {
         return id;
@@ -70,11 +88,11 @@ public class PilierWS {
         this.axes = axes;
     }
 
-    public List<MediaWs> getMediaWss() {
-        return mediaWss;
+    public List<Media> getMedias() {
+        return medias;
     }
 
-    public void setMediaWss(List<MediaWs> mediaWss) {
-        this.mediaWss = mediaWss;
+    public void setMedias(List<Media> medias) {
+        this.medias = medias;
     }
 }
