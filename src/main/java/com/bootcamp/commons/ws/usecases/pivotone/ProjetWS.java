@@ -36,6 +36,24 @@ public class ProjetWS {
     private double niveauFinacement;
     private List<RegionWS> regions = new ArrayList<RegionWS>();
     private List<Media> medias;
+    private LikeWS likes;
+    private NoteWS notes;
+
+    public LikeWS getLikes() {
+        return likes;
+    }
+
+    public void setLikes(LikeWS likes) {
+        this.likes = likes;
+    }
+
+    public NoteWS getNotes() {
+        return notes;
+    }
+
+    public void setNotes(NoteWS notes) {
+        this.notes = notes;
+    }
 
     public int getId() {
         return id;
