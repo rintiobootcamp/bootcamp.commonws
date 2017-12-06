@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author leger
  */
-class TypeReponseWS {
+public class TypeReponseWS {
     
     private int id;
     private String titre;

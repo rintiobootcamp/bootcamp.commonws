@@ -8,8 +8,16 @@ import java.util.List;
 public class QuestionWS {
 
     private int id;
-    private String titre;
     private int entityId;
+    private String entityType;
+
+    public String getEntityType() {
+        return entityType;
+    }
+
+    public void setEntityType(String entityType) {
+        this.entityType = entityType;
+    }
     private String sujet;
     private long dateCreationQuestion;
     private long dateMiseAJourQuestion;
@@ -21,14 +29,6 @@ public class QuestionWS {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getTitre() {
-        return titre;
-    }
-
-    public void setTitre(String titre) {
-        this.titre = titre;
     }
 
     public int getEntityId() {
