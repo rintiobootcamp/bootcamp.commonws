@@ -13,7 +13,7 @@ import com.bootcamp.commons.enums.EntityType;
  */
 public class PreferenceWS {
     private int entityId;
-    private EntityType entityType;
+    private String entityType;
     private String email;
     private String contact;
     private long dateCreation;
@@ -26,11 +26,11 @@ public class PreferenceWS {
         this.entityId = entityId;
     }
 
-    public EntityType getEntityType() {
+    public String getEntityType() {
         return entityType;
     }
 
-    public void setEntityType(EntityType entityType) {
+    public void setEntityType(String entityType) {
         this.entityType = entityType;
     }
 
