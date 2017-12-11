@@ -6,7 +6,7 @@
 package com.bootcamp.commons.ws.usecases.pivotone;
 
 import com.bootcamp.entities.Media;
-import com.bootcamp.entities.Phase;
+import com.bootcamp.entities.Objectif;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,15 +26,16 @@ public class ProjetWS {
     private long dateDebutPrevisionnel;
     private long dateFinPrevisionnel;
     private double budgetPrevisionnel;
-    private double budgetReel;
+    private double financementPrive;
+     private double financementPublic;
     private double coutReel;
-    private String objectif;
-    private PhaseWS phaseActuelle;
+    private List<Objectif> listobjectifs;
+    private List<PhaseWS> phasesActuelles;
     private List<PhaseWS> phases;
     private int secteurId;
     private SecteurWS secteur;
     private double niveauFinacement;
-    private List<RegionWS> regions = new ArrayList<RegionWS>();
+    private List<RegionWS> regions = new ArrayList<>();
     private List<Media> medias;
     private LikeWS likes;
     private NoteWS notes;
@@ -127,13 +128,22 @@ public class ProjetWS {
         this.budgetPrevisionnel = budgetPrevisionnel;
     }
 
-    public double getBudgetReel() {
-        return budgetReel;
+    public double getFinancementPrive() {
+        return financementPrive;
     }
 
-    public void setBudgetReel(double budgetReel) {
-        this.budgetReel = budgetReel;
+    public void setFinancementPrive(double financementPrive) {
+        this.financementPrive = financementPrive;
     }
+
+    public double getFinancementPublic() {
+        return financementPublic;
+    }
+
+    public void setFinancementPublic(double financementPublic) {
+        this.financementPublic = financementPublic;
+    }
+
 
     public double getCoutReel() {
         return coutReel;
@@ -143,13 +153,14 @@ public class ProjetWS {
         this.coutReel = coutReel;
     }
 
-    public String getObjectif() {
-        return objectif;
+    public List<Objectif> getListobjectifs() {
+        return listobjectifs;
     }
 
-    public void setObjectif(String objectif) {
-        this.objectif = objectif;
+    public void setListobjectifs(List<Objectif> listobjectifs) {
+        this.listobjectifs = listobjectifs;
     }
+
 
     public List<PhaseWS> getPhases() {
         return phases;
@@ -191,13 +202,14 @@ public class ProjetWS {
         this.secteur = secteur;
     }
 
-    public PhaseWS getPhaseActuelle() {
-        return phaseActuelle;
+    public List<PhaseWS> getPhasesActuelles() {
+        return phasesActuelles;
     }
 
-    public void setPhaseActuelle(PhaseWS phaseActuelle) {
-        this.phaseActuelle = phaseActuelle;
+    public void setPhasesActuelles(List<PhaseWS> phasesActuelles) {
+        this.phasesActuelles = phasesActuelles;
     }
+
 
     public List<Media> getMedias() {
         return medias;
