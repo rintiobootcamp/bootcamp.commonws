@@ -18,6 +18,11 @@ import java.util.Map;
  */
 public class RequestParser implements CommonsWsConstants{
 
+    /**
+     *
+     * @param request
+     * @return
+     */
     public static Criterias getCriterias(HttpServletRequest request){
         Map<String, String[]> queryParameters = getQueryParameters(request);
         if(queryParameters.get(CRITERIA_FIELDS) == null) return null;
@@ -36,6 +41,11 @@ public class RequestParser implements CommonsWsConstants{
         return criterias;
     }
 
+    /**
+     *
+     * @param request
+     * @return
+     */
     public static  List<String> getFields(HttpServletRequest request){
         Map<String, String[]> queryParameters = getQueryParameters(request);
         if(queryParameters.get(CRITERIA_FIELDS) == null) return null;
@@ -50,6 +60,11 @@ public class RequestParser implements CommonsWsConstants{
         return fields;
     }
 
+    /**
+     *
+     * @param request
+     * @return
+     */
     public static Map<String, String[]> getQueryParameters(HttpServletRequest request) {
         Map<String, String[]> queryParameters = new HashMap<>();
         String queryString = request.getQueryString();
