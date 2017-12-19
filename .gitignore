@@ -30,5 +30,7 @@ hs_err_pid*
 /log/
 /logs/
 /target/
+/src/main/resources/
+/src/test/resources/
 
 *.iml
