@@ -1,17 +1,18 @@
 package com.bootcamp.commons.ws.usecases.pivotone;
 
-
 import java.util.List;
 
 /**
  * Created by darextossa on 12/17/17.
  */
 public class UserWs {
+
     private int id;
     private String username;
     private String password;
     private String nom;
     private String email;
+    private String numero;
     private List<RoleWs> roles;
 
     public int getId() {
@@ -62,5 +63,12 @@ public class UserWs {
         this.roles = roles;
     }
 
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 
 }
