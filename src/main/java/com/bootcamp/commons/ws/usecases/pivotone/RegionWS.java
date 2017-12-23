@@ -16,8 +16,8 @@ public class RegionWS {
     private int id;
     private String nom;
     private RegionType type;
-    private long longitude;
-    private long latitude;
+    private double longitude;
+    private double latitude;
 
     /**
      * Get the location id
@@ -78,7 +78,7 @@ public class RegionWS {
      *
      * @return the longitude
      */
-    public long getLongitude() {
+    public double getLongitude() {
         return longitude;
     }
 
@@ -87,7 +87,7 @@ public class RegionWS {
      *
      * @param longitude the longitude to set
      */
-    public void setLongitude(long longitude) {
+    public void setLongitude(double longitude) {
         this.longitude = longitude;
     }
 
@@ -96,7 +96,7 @@ public class RegionWS {
      *
      * @return the latitude
      */
-    public long getLatitude() {
+    public double getLatitude() {
         return latitude;
     }
 
@@ -105,7 +105,7 @@ public class RegionWS {
      *
      * @param latitude the latitude to set
      */
-    public void setLatitude(long latitude) {
+    public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
 }

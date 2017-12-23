@@ -16,6 +16,46 @@ public class RegionUWS {
     private int id;
     private String nom;
     private RegionType type;
-    private long longitude;
-    private long latitude;
+    private double longitude;
+    private double latitude;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public RegionType getType() {
+        return type;
+    }
+
+    public void setType(RegionType type) {
+        this.type = type;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
 }
