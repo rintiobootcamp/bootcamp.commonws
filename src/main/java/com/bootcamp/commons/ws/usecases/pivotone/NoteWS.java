@@ -12,9 +12,8 @@ import com.bootcamp.commons.enums.EntityType;
  * @author Bello
  */
 public class NoteWS {
-    private int entityId;
-    private EntityType entityType;
     private double moyenne;
+    private int allNotesCount;
     private int noteOneCounts;
     private int noteTwoCounts;
     private int noteThreeCounts;
@@ -22,31 +21,17 @@ public class NoteWS {
     private int noteFiveCounts;
 
     /**
-     * @return the entityId
+     * @return the counts
      */
-    public int getEntityId() {
-        return entityId;
+    public int getAllNotesCount() {
+        return allNotesCount;
     }
 
-    /**
-     * @param entityId the entityId to set
+     /**
+     * @param allNotesCount the counts to set
      */
-    public void setEntityId(int entityId) {
-        this.entityId = entityId;
-    }
-
-    /**
-     * @return the entityType
-     */
-    public EntityType getEntityType() {
-        return entityType;
-    }
-
-    /**
-     * @param entityType the entityType to set
-     */
-    public void setEntityType(EntityType entityType) {
-        this.entityType = entityType;
+    public void setAllNotesCount(int allNotesCount) {
+        this.allNotesCount = allNotesCount;
     }
 
     /**
